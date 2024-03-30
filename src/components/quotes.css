@@ -1,0 +1,49 @@
+.bg{
+    color: #1B2021 !important;
+    background-color: #37123c;
+}
+
+.card-bg{
+    background-color: #B5DFCA;
+}
+
+.hover:hover{
+    transform: scale(0.9);
+    transition: 0.1s;
+}
+.loading{
+    position: fixed;
+    top: 45%;
+    width: 40px;
+    height: 40px;
+    /* border: 2px solid transparent; */
+    border-radius: 50%;
+    animation: pre_loader 1s linear infinite  ;
+}
+
+
+@keyframes pre_loader{
+    0%{
+        transform: rotate(0deg);
+        box-shadow: 1px 2px 2px rgb(184, 130, 130);
+    }
+    25%{
+        transform: rotate(90deg);
+        box-shadow: 1px 2px 2px rgb(131, 97, 97);
+    }
+
+    50%{
+        transform: rotate(180deg);
+        box-shadow: 1px 2px 2px rgb(128, 100, 100);
+    } 
+    
+    75%{
+        transform: rotate(270deg);
+        box-shadow: 1px 2px 2px rgb(131, 97, 97);
+    }
+    100%{
+        transform: rotate(360deg);
+        box-shadow: 1px 2px 2px rgb(128, 100, 100);
+    }
+    
+}
